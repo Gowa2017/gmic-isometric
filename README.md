@@ -1,3 +1,12 @@
+
+Mainly the knowlege from [screamingbrainstudios](https://screamingbrainstudios.com/making-isometric-tiles/).
+
+They made a tool [texture-manipulator](https://screamingbrainstudios.itch.io/texture-manipulator) quicky do this.
+
+[GMIC](https://gmic.eu/) is  a full-featured open-source framework for digital image processing, distributed under the CeCILL free software licenses (LGPL-like and/or GPL-compatible).
+
+We use GMIS's filter named **Cartesian Transform** do `pixel operation` on image.
+
 # Start
 
 ```sh
