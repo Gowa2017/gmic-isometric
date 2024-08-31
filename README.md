@@ -23,6 +23,7 @@ gmic images/Bricks_17-512x512-1.png  if '!2' to_a fi repeat '$!' +norm. . f.. "(
 gmic images/Bricks_17-512x512-1.png  if '!2' to_a fi repeat '$!' +norm. . f.. "(1+(x-1)+(y-1)*2)" f. "(1+(y-1)*2 -(x-1))" 'a[-2,-1]' c warp.. .,0,1,2,1 rm. mv. 0 done output images/Bricks_17-512x512-1-ISO-Rotate-Right.png
 ```
 
+<img src="images/Bricks_17-512x512-1.png" width="100" />
 ![](images/Bricks_17-512x512-1.png)
 ![](images/Bricks_17-512x512-1-Rotate-Right.png)
 ![](images/Bricks_17-512x512-1-ISO-Rotate-Right.png)
@@ -43,3 +44,18 @@ gmic images/Bricks_17-512x512-1.png  if '!2' to_a fi repeat '$!' +norm. . f.. "(
 ![](images/Bricks_17-512x512-1.png)
 ![](images/Bricks_17-512x512-1-Rotate-Left.png)
 ![](images/Bricks_17-512x512-1-ISO-Rotate-Left.png)
+
+
+# ISO Rotate Left Wall
+
+```sh
+gmic images/Bricks_17-512x512-1.png  if '!2' to_a fi repeat '$!' +norm. . f.. "x" f. "y+x/2" 'a[-2,-1]' c warp.. .,0,1,2,1 rm. mv. 0 done output images/Bricks_17-512x512-1-ISO-Rotate-Left-Wall.png
+```
+# ISO Rotate Right Wall
+
+```sh
+gmic images/Bricks_17-512x512-1.png  if '!2' to_a fi repeat '$!' +norm. . f.. "x" f. "y-x/2" 'a[-2,-1]' c warp.. .,0,1,2,1 rm. mv. 0 done output images/Bricks_17-512x512-1-ISO-Rotate-Right-Wall.png
+```
+![](images/Bricks_17-512x512-1.png)
+![](images/Bricks_17-512x512-1-ISO-Rotate-Left-Wall.png)
+![](images/Bricks_17-512x512-1-ISO-Rotate-Left-Wall.png)
